@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import bgImage from "../assets/bg-image/bgp2.png";
 
 export default function Hero() {
