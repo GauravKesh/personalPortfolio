@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         <div className="sm:min-w-lg lg:w-full pr-0  md:w-1/2 w-5/6">
-          <Zoom>
+         
             <div className="w-50 h-50 object-contain    ring-primary ring-offset-base-100 ring-offset-2   shadow-cyan-500/50 ">
               <img
                 class="object-contain object-center rounded h-48w-96"
@@ -57,7 +57,7 @@ export default function Hero() {
                 src={bgImage}
               />
             </div>
-          </Zoom>
+        
         </div>
       </div>
     </section>
