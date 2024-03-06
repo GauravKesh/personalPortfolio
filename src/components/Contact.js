@@ -14,7 +14,7 @@ export default function Contact() {
             <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
               <Zoom>
                 <div class="text-white lg:w-1/2 lg:mx-6">
-                  <h1 class="text-2xl font-semibold capitalize lg:text-3xl text-orange-900">
+                  <h1 class="text-2xl font-semibold capitalize lg:text-3xl text-blue-300">
                     Let's Connect
                   </h1>
 
@@ -69,12 +69,8 @@ export default function Contact() {
                     <div className="mail-id pl-3">gkrcoder@gmail.com</div>
                   </div>
 
-                  {/*                 <button class="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-orange-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-                  get in touch
-                </button> */}
-
                   <div class="mt-6 md:mt-8">
-                    <h3 class="text-amber-900">Follow Me</h3>
+                    <h3 class="text-blue-300"><strong>Follow Me</strong></h3>
 
                     <div class="flex mt-4 -mx-1.5 ">
                       <a
@@ -138,7 +134,7 @@ export default function Contact() {
                       </a>
                       <a
                         class="mx-1.5 text-white transition-colors duration-300 transform"
-                        href="https://www.discord.com/users/hackedversion2.0"
+                        href="https://www.instagram.com/gkrcoder"
                         target="_blank"
                       >
                         <svg
