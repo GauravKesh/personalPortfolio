@@ -46,7 +46,7 @@ export default function Hero() {
             </p>
             <div class="flex justify-center">
               <button
-                class="inline-flex md:w-60 text-white  bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-300 rounded text-lg relative  items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6group"
+                class="inline-flex md:w-60 text-white  bg-gray-500 border-0  px-6 focus:outline-none hover:bg-blue-300 rounded text-lg relative  items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6group"
                 onClick={() => scrollToTarget("contact")}
               >
                 <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-blue-600 group-hover:h-full"></span>

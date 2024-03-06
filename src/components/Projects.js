@@ -24,6 +24,7 @@ export default function Projects() {
             </div>
             <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"></p>
           </div>
+
           <div class="flex flex-wrap -m-4">
             <div class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">

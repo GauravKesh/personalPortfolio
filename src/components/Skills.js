@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
+// import { Zoom } from "react-awesome-reveal";
 
 export default function Skills() {
   /* scrolling target */

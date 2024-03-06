@@ -1,5 +1,5 @@
 
-import { Fade ,Zoom} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 // import profileimage from "../assets/bg-image/bgp6.png";
 import profileimg from "../assets/logo/smbgp1.png";
