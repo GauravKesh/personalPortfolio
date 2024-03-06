@@ -5,12 +5,12 @@ export default function Projects() {
     <>
       <section className="text-gray-400 bg-gray-900 body-font py-10">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-amber-900">
+          <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-white">
             Some of My Works
           </h1>
 
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base" my-5>
-            Crafting Tomorrow's Solutions, One Project at a Time."
+           
           </p>
         </div>
       </section>
@@ -18,10 +18,10 @@ export default function Projects() {
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Pitchfork Kickstarter Taxidermy</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">.</h1>
         <div class="h-1 w-20 bg-indigo-500 rounded"></div>
       </div>
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"></p>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="xl:w-1/4 md:w-1/2 p-4">

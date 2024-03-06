@@ -237,7 +237,7 @@ export default function Contact() {
                         ></textarea>
                       </div>
 
-                      <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-amber-900 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50">
+                      <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-white rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50">
                         get in touch
                       </button>
                     </form>
