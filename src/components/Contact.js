@@ -26,7 +26,7 @@ export default function Contact() {
                     fosters meaningful connections. Reach out, and let's turn
                     ideas into reality!
                   </p>
-                  <br/>
+                  <br />
                   <div class="flex mt-4 -mx-1.5 ">
                     <a
                       class="mx-1.5 text-white transition-colors duration-300 transform "
@@ -70,7 +70,9 @@ export default function Contact() {
                   </div>
 
                   <div class="mt-6 md:mt-8">
-                    <h3 class="text-blue-300"><strong>Follow Me</strong></h3>
+                    <h3 class="text-blue-300">
+                      <strong>Follow Me</strong>
+                    </h3>
 
                     <div class="flex mt-4 -mx-1.5 ">
                       <a
@@ -233,8 +235,27 @@ export default function Contact() {
                         ></textarea>
                       </div>
 
-                      <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-white rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50">
-                        get in touch
+                      <button class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+                          <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+                          Button Text
+                        </span>
+                        <span class="relative invisible">Button Text</span>
                       </button>
                     </form>
                   </div>

@@ -1,16 +1,15 @@
 import React from "react";
-import { Zoom } from "react-awesome-reveal";
+
 
 export default function Projects() {
   return (
     <>
-      <section className="text-gray-400 bg-gray-900 body-font py-10">
+{/*       <section className="text-gray-400 bg-gray-900 body-font py-10">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-white">
+          <h1 class="sm:text-3xl text-3xl font-medium title-font mb-1 text-white">
             Some of My Works
           </h1>
-
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base" my-5></p>
+          
         </div>
       </section>
       <section class="text-gray-400 body-font bg-gray-900">
@@ -104,7 +103,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
