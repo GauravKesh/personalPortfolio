@@ -253,7 +253,7 @@ export default function Contact() {
                           </svg>
                         </span>
                         <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-                          Button Text
+                         Let's connect
                         </span>
                         <span class="relative invisible">Button Text</span>
                       </button>
