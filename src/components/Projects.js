@@ -9,16 +9,16 @@ import project4 from "../assets/projectImage/project4.png";
 export default function Projects() {
   return (
     <>
-      <section className="text-gray-400 bg-gray-900 body-font py-10">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-3xl font-medium title-font mb-1 text-white">
+      <section className="text-gray-400 bg-gray-900 body-font pt-10">
+        <div class="flex flex-col text-center w-full ">
+          <h1 class="sm:text-3xl text-3xl font-medium title-font  text-white ">
             Some of My Works
           </h1>
         </div>
       </section>
-      <section class="text-gray-400 body-font bg-gray-900">
+      <section class="text-gray-400 body-font bg-gray-900 pt-10 pb-10">
         <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
+          <div class="container px-5  mx-auto">
             <div class="flex flex-wrap -m-4">
               {/* project 1 */}
               <div class="p-4 md:w-1/3 animate-dzoom ">
@@ -90,17 +90,17 @@ export default function Projects() {
                     alt="blog"
                   />
                   <div class="p-6 ">
-                    <h1 class="tracking-widest text-lg title-font font-medium text-gray-400 mb-3">
+                    <h1 class="tracking-widest text-lg title-font font-medium text-gray-400 mb-1">
                       Text Transform App
                     </h1>
                     <p class="leading-relaxed mb-3">
                       Using this app you can transform text in different way
                     </p>
-                    <h1 class="title-font text-sm font-medium text-gray-400 pb-3 py-3">
+                    <h1 class="title-font text-sm font-medium text-gray-400 pb-2 py-2">
                       <strong className="pr-2">Technology Used:- </strong>React
                       Js,Bootstrap
                     </h1>
-                    <div class="flex items-center flex-wrap space-x-2 ">
+                    <div class="flex items-center flex-wrap space-x-2 pt-10">
                       {/* github link */}
                       <a
                         class="flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black px-7 py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
@@ -202,7 +202,7 @@ export default function Projects() {
                 </div>
               </div>
               {/* project 4 */}
-          
+
               {/* project 5 */}
               <div class="p-4 md:w-1/3 animate-dzoom   ">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
