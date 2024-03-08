@@ -9,17 +9,17 @@ import Footer from "./components/Footer.js";
 import Projects from "./components/Projects.js";
 import Loading from "./components/Loading.js";
 import Skills from "./components/Skills.js";
-import glogo from "./assets/logo/myLogo.png"
+import glogo from "./assets/logo/myLogo.png";
 
 function App() {
   /* Hamburger Function */
- const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   /* scrolling target */
-    const scrollToTargetClick = (targetId) => {
+  const scrollToTargetClick = (targetId) => {
     document.getElementById(targetId).scrollIntoView({
       behavior: "smooth",
     });

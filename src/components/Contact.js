@@ -18,7 +18,7 @@ export default function Contact() {
                     Let's Connect
                   </h1>
 
-                  <p class="max-w-xl mt-6">
+                  <p class="max-w-xl mt-6 text-white">
                     Let's bridge the digital divide together! As a web
                     developer, I'm here to build more than just websites; I'm
                     here to create connections. Let's collaborate and craft an
@@ -44,7 +44,9 @@ export default function Contact() {
                         ></path>
                       </svg>
                     </a>
-                    <div className="contact-number pl-2">+91 7892917825</div>
+                    <div className="contact-number text-white pl-2">
+                      +91 7892917825
+                    </div>
                   </div>
 
                   {/* email */}
@@ -66,7 +68,9 @@ export default function Contact() {
                         ></path>
                       </svg>
                     </a>
-                    <div className="mail-id pl-3">gkrcoder@gmail.com</div>
+                    <div className="mail-id pl-3 text-white ">
+                      gkrcoder@gmail.com
+                    </div>
                   </div>
 
                   <div class="mt-6 md:mt-8">
@@ -166,10 +170,8 @@ export default function Contact() {
 
               <div class="mt-8 lg:w-1/2 lg:mx-6" id="contact-form">
                 <Zoom delay="1">
-                  <div class="w-full px-8 py-10 mx-auto overflow-hidden text-red-700 shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-                    <p class="mt-2 text-orange-700 dark:text-gray-400">
-                      Send Me your Message
-                    </p>
+                  <div class="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl dark:bg-black lg:max-w-xl">
+                    <p class="mt-2 text-gray-400">Send Me your Message</p>
 
                     <form
                       class="mt-6"
@@ -198,62 +200,58 @@ export default function Contact() {
                         value="Alert!! New message from your web-portfolio"
                       ></input>
                       <div class="flex-1">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        <label class="block mb-2 text-sm text-gray-200">
                           Full Name
                         </label>
                         <input
                           type="text"
                           placeholder="John Doe"
                           name="name"
-                          class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700  border border-gray-200 rounded-md bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           required
                         />
                       </div>
 
                       <div class="flex-1 mt-6">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        <label class="block mb-2 text-sm text-gray-200">
                           Email address
                         </label>
                         <input
                           type="email"
                           name="email"
-                          placeholder="johndoe@example.com"
-                          class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                          placeholder="xyzcompany@gmail.com"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700  border border-gray-200 rounded-md bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           required
                         />
                       </div>
 
                       <div class="w-full mt-6">
-                        <label class="block mb-2 text-sm text-amber-900 dark:text-red-200">
+                        <label class="block mb-2 text-sm text-gray-200">
                           Message
                         </label>
                         <textarea
                           name="message"
-                          class="block w-full h-32 px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                          class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400  border border-gray-200 rounded-md md:h-48  bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           placeholder="Message"
                           required
                         ></textarea>
                       </div>
 
-                      <button class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
+                      <button class="w-full px-6 py-3 mt-6 text-sm ftracking-wide capitalize transform bg-gray-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50  relative inline-flex items-center justify-center p-4 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
                         <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
                           <svg
-                            class="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-send"
+                            viewBox="0 0 16 16"
                           >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            ></path>
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
                           </svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-                         Let's connect
+                        <span class="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">
+                          Let's connect
                         </span>
                         <span class="relative invisible">Button Text</span>
                       </button>

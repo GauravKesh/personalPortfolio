@@ -67,7 +67,7 @@ export default function About() {
         </Zoom>
 
         <div className="quote container flex flex-col text-center w-full mb-20">
-          <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+          <blockquote class="text-xl italic font-semibold text-gray-400 dark:text-white">
             <svg
               class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4"
               aria-hidden="true"

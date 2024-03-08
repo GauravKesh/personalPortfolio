@@ -34,7 +34,6 @@ export default function footer() {
               ></a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-             
               <a
                 class="ml-3 text-gray-400"
                 href="https://www.github.com/gauravkesh"
@@ -91,7 +90,10 @@ export default function footer() {
                   ></path>
                 </svg>
               </a>
-              <a class="ml-3 text-white">
+              <a
+                class="ml-3 text-white"
+                href="https://www.instagram.com/gkrcoder"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
