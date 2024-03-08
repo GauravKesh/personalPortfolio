@@ -1,5 +1,4 @@
 import React from "react";
-import { Zoom } from "react-awesome-reveal";
 import project1 from "../assets/projectImage/project1.png";
 import project2 from "../assets/projectImage/project2.png";
 import project3 from "../assets/projectImage/project3.png";
