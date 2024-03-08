@@ -24,6 +24,7 @@ function App() {
       behavior: "smooth",
     });
   };
+ 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
@@ -106,7 +107,7 @@ function App() {
 
               <ul
                 tabIndex={0}
-                className={`container-lg  menu menu-lg dropdown-content pr-6 mt-3 z-[1] bg-red-900  rounded-box w-90 h-100 ${
+                className={`container-lg  menu menu-lg dropdown-content pr-6 mt-3 z-[1] bg-gray-900  rounded-box w-90 h-100 ${
                   isOpen ? "visible" : "hidden"
                 }`}
               >
