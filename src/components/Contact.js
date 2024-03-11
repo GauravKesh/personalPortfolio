@@ -1,16 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import { Zoom } from "react-awesome-reveal";
-import { useForm } from "react-hook-form";
+import { useForm} from "react-hook-form";
 // import "dotenv/config";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
 
+
   setTimeout(() => {
     setResult("");
   }, 3000);
+
+
 
   const onSubmit = async (data) => {
     console.log(data);
@@ -217,14 +220,6 @@ export default function Contact() {
                       onSubmit={handleSubmit(onSubmit)}
                       id="contact-form"
                     >
-                      <input
-                        type="hidden"
-                        name="from_name"
-                        value="Personal Portfolio"
-                      ></input>
-
-                      {/* checkbox */}
-
                       <div class="flex-1">
                         <label class="block mb-2 text-sm text-gray-200">
                           Full Name
@@ -268,7 +263,6 @@ export default function Contact() {
 
                       <button
                         type="submit"
-                     
                         className="w-full px-6 py-3 mt-6 text-sm ftracking-wide capitalize transform bg-gray-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50  relative inline-flex items-center justify-center p-4 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2  rounded-full shadow-md group"
                       >
                         <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
