@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React,{useState} from "react";
 import { Zoom } from "react-awesome-reveal";
-import { set, useForm } from "react-hook-form";
+import {useForm } from "react-hook-form";
 // import "dotenv/config";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
@@ -30,7 +30,7 @@ export default function Contact() {
 
     if (res.success) {
       console.log("Success", res);
-      setResult("I recieved your Message! I will get back to you soon. Thank you!");
+      setResult("I received your Message! I will get back to you soon. Thank you!");
      
       
       
