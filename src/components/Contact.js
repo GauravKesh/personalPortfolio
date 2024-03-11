@@ -1,21 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useState, } from "react";
+import React, { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
-import { useForm} from "react-hook-form";
+import { useForm } from "react-hook-form";
 // import "dotenv/config";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
 
-
   setTimeout(() => {
     setResult("");
   }, 3000);
 
-
-
-  const onSubmit = async (data) => {
+  const onSubmit = async (data,e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+      e.target.reset();
     console.log(data);
     setResult("Sending....");
     const formData = new FormData();
@@ -42,6 +41,7 @@ export default function Contact() {
       setResult(
         "I received your Message! I will get back to you soon. Thank you!"
       );
+    
     } else {
       console.log("Error", res);
       setResult(res.message);
@@ -222,7 +222,7 @@ export default function Contact() {
                     >
                       <div class="flex-1">
                         <label class="block mb-2 text-sm text-gray-200">
-                          Full Name
+                          Full Name<strong className="text-red-500">*</strong>
                         </label>
                         <input
                           type="text"
@@ -237,6 +237,7 @@ export default function Contact() {
                       <div class="flex-1 mt-6">
                         <label class="block mb-2 text-sm text-gray-200">
                           Email address
+                          <strong className="text-red-500">*</strong>
                         </label>
                         <input
                           type="email"
@@ -250,7 +251,7 @@ export default function Contact() {
 
                       <div class="w-full mt-6">
                         <label class="block mb-2 text-sm text-gray-200">
-                          Message
+                          Message <strong className="text-red-500">*</strong>
                         </label>
                         <textarea
                           name="message"
@@ -285,7 +286,7 @@ export default function Contact() {
                       <div id="result"></div>
                     </form>
                   </div>
-                  <div className="result h-2 text-red-600 mt-3 w-full">
+                  <div className="result h-2 text-blue-500 mt-3 w-full">
                     {result}
                   </div>
                 </Zoom>
