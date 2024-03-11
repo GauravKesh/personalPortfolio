@@ -10,7 +10,7 @@ export default function Contact() {
 
   setTimeout(() => {
     setResult("");
-  }, 3000);
+  }, 5000);
 
   const onSubmit = async (data,e) => {
     e.preventDefault(); // Prevent default form submission behavior
