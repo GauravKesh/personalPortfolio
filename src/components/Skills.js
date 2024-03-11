@@ -33,7 +33,7 @@ export default function Skills() {
 
           <div class="mb-4 border-b border-gray-700 ">
             <ul
-              class="flex flex-no-wrap -mb-px pb-3  text-sm font-medium text-center md:justify-center overflow-x-scroll sm:overflow-hidden md:overflow-hidden "
+              class="flex flex-no-wrap -mb-px pb-3  text-sm font-medium text-center md:flex  md:justify-center overflow-x-scroll sm:overflow-hidden md:overflow-hidden  "
               id="default-tab"
               data-tabs-toggle="#default-tab-content"
               role="tablist"

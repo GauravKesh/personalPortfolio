@@ -14,8 +14,7 @@ import glogo from "./assets/logo/myLogo.png";
 function App() {
   /* Hamburger Function */
   const [isOpen, setIsOpen] = useState(false);
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+
   const [isLoading, setIsLoading] = useState(true);
 
   /* scrolling target */
@@ -25,33 +24,13 @@ function App() {
     });
   };
  
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // if scrolling down, hide the navbar
-        setShow(false);
-      } else {
-        // if scrolling up, show the navbar
-        setShow(true);
-      }
 
-      // remember the current page location for the next move
-      setLastScrollY(window.scrollY);
-    }
-  };
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      // cleanup function
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [controlNavbar, lastScrollY]);
+   
+  }, []);
   // scroll-to-id
   const scrollToTarget = (targetId) => {
     document.getElementById(targetId).scrollIntoView({
@@ -64,11 +43,7 @@ function App() {
 
   return (
     <>
-      <nav
-        className={` fixed w-full z-30 transition-transform duration-300 transform ${
-          show ? "translate-y-0" : "-translate-y-full"
-        }`}
-      >
+      <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0 ">
         <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50 w-full px-5 py-2 flex  ">
           <div className="navbar-start ">
             <div className=" dropdown bg-gray-900">
@@ -130,7 +105,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="plogo w-24">
+            <div className="plogo w-30 lg:pl-30 md:pr-0  ">
               <a
                 className="btn btn-ghost bg-grey-900 hover:bg-grey-900 text-5xl px-1"
                 onClick={() => scrollToTargetClick("hero")}
@@ -139,7 +114,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="  container navbar-center flex-row-reverse bg-gray-900  hidden lg:flex">
+          <div className="  container navbar-center flex-row-reverse bg-gray-900   hidden lg:flex lg:pr-16 lg:pl-20">
             <ul className="menu bg-gray-900 menu-horizontal px-10 ">
               <li>
                 <a onClick={() => scrollToTargetClick("about")}>About</a>

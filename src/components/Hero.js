@@ -37,8 +37,8 @@ export default function Hero() {
         style={{ myStyle }}
         className="  bg-gray-900 body-font justify-center pb-8 "
       >
-        <div class="container mx-auto  flex  py-24 md:flex-row flex-col items-center space-x-10 content-start">
-          <div class="lg:flex-grow md:w-1/2 pt-0  lg:pr-24 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div class="container mx-auto  flex  py-24 md:flex-row flex-col items-center space-x-10 ">
+          <div class="lg:flex-grow md:w-1/2 pt-0  lg:pr-0 lg:pl-20 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center md:pl-20   ">
             <h1 class="title-font  sm:text-4xl text-3xl mb-4 font-medium text-indigo-400 ">
               <Zoom damping={0.1}>
                 <p>Welcome! I'm Gaurav,</p>
@@ -126,7 +126,7 @@ export default function Hero() {
           </div>
 
           <Zoom damping={0.5}>
-            <div className="sm:min-w-lg lg:w-full pr-0  md:w-1/2 w-5/6">
+            <div className="sm:min-w-lg lg:w-full pr-0    ">
               <div className="w-50 h-50 object-contain ring-primary ring-offset-base-100 ring-offset-2   shadow-cyan-500/50 ">
                 <img
                   class="object-contain object-center rounded h-48w-96"
