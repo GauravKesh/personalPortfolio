@@ -1,27 +1,33 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
-import {useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 // import "dotenv/config";
 export default function Contact() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
-  
+
   setTimeout(() => {
     setResult("");
-  },3000);
+  }, 3000);
 
   const onSubmit = async (data) => {
     console.log(data);
     setResult("Sending....");
     const formData = new FormData();
     formData.append("access_key", "e9e6bb07-5d1d-4792-9125-f82ecdeaa341");
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("message", data.message);
-    
+    formData.append("title", 'New Message from "Personal Portfolio"');
+    formData.append("from_name", `${data.name} [ " Portfolio "]`);
+    formData.append("subject", `${data.name} has sent you a message`);
 
+    for (const key in data) {
+      if (key === "file") {
+        formData.append(key, data[key][0]);
+      } else {
+        formData.append(key, data[key]);
+      }
+    }
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -30,14 +36,12 @@ export default function Contact() {
 
     if (res.success) {
       console.log("Success", res);
-      setResult("I received your Message! I will get back to you soon. Thank you!");
-     
-      
-      
+      setResult(
+        "I received your Message! I will get back to you soon. Thank you!"
+      );
     } else {
       console.log("Error", res);
       setResult(res.message);
-      
     }
   };
 
