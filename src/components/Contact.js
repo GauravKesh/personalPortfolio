@@ -18,7 +18,7 @@ export default function Contact() {
     const formData = new FormData();
     formData.append("access_key", "e9e6bb07-5d1d-4792-9125-f82ecdeaa341");
     formData.append("title", 'New Message from "Personal Portfolio"');
-    formData.append("from_name", `${data.name} [ " Portfolio "]`);
+    formData.append("from_name", `${data.name} Portfolio`);
     formData.append("subject", `${data.name} has sent you a message`);
 
     for (const key in data) {
@@ -268,6 +268,7 @@ export default function Contact() {
 
                       <button
                         type="submit"
+                     
                         className="w-full px-6 py-3 mt-6 text-sm ftracking-wide capitalize transform bg-gray-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50  relative inline-flex items-center justify-center p-4 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2  rounded-full shadow-md group"
                       >
                         <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
