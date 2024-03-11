@@ -78,7 +78,7 @@ export default function About() {
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
             <Zoom cascade damping={1}>
-              <p>"When creativity meets the developer a new thing is formed"</p>
+              <p>Don't wait for Inspiration. It comes while working</p>
             </Zoom>
           </blockquote>
         </div>
