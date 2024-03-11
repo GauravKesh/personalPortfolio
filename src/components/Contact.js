@@ -1,11 +1,46 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
-import React from "react";
+import React,{useState} from "react";
 import { Zoom } from "react-awesome-reveal";
+import { set, useForm } from "react-hook-form";
 // import "dotenv/config";
 export default function Contact() {
-  // const dotenv = require('dotenv')
-  // const SMS_VALUE =process.env.VALUE
+  const { register, handleSubmit } = useForm();
+  const [result, setResult] = useState("");
+  
+  setTimeout(() => {
+    setResult("");
+  },3000);
+
+  const onSubmit = async (data) => {
+    console.log(data);
+    setResult("Sending....");
+    const formData = new FormData();
+    formData.append("access_key", "e9e6bb07-5d1d-4792-9125-f82ecdeaa341");
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
+    
+
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      setResult("I recieved your Message! I will get back to you soon. Thank you!");
+     
+      
+      
+    } else {
+      console.log("Error", res);
+      setResult(res.message);
+      
+    }
+  };
+
   return (
     <>
       <section class="min-h-screen bg-cover ">
@@ -170,13 +205,12 @@ export default function Contact() {
 
               <div class="mt-8 lg:w-1/2 lg:mx-6" id="contact-form">
                 <Zoom delay="1">
-                  <div class="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl dark:bg-black lg:max-w-xl">
+                  <div class="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl dark:bg-black lg:max-w-xl pb-2">
                     <p class="mt-2 text-gray-400">Send Me your Message</p>
 
                     <form
                       class="mt-6"
-                      action="https://api.web3forms.com/submit"
-                      method="POST"
+                      onSubmit={handleSubmit(onSubmit)}
                       id="contact-form"
                     >
                       <input
@@ -184,21 +218,9 @@ export default function Contact() {
                         name="from_name"
                         value="Personal Portfolio"
                       ></input>
-                      <input
-                        type="hidden"
-                        name="redirect"
-                        value="https://web3forms.com/success?title=My%20Text&desc=Custom%20Description"
-                      ></input>
-                      <input
-                        type="hidden"
-                        name="access_key"
-                        value="e9e6bb07-5d1d-4792-9125-f82ecdeaa341"
-                      ></input>
-                      <input
-                        type="hidden"
-                        name="subject"
-                        value="Alert!! New message from your web-portfolio"
-                      ></input>
+
+                      {/* checkbox */}
+
                       <div class="flex-1">
                         <label class="block mb-2 text-sm text-gray-200">
                           Full Name
@@ -207,6 +229,7 @@ export default function Contact() {
                           type="text"
                           placeholder="John Doe"
                           name="name"
+                          {...register("name")}
                           class="block w-full px-5 py-3 mt-2 text-gray-700  border border-gray-200 rounded-md bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           required
                         />
@@ -219,6 +242,7 @@ export default function Contact() {
                         <input
                           type="email"
                           name="email"
+                          {...register("email")}
                           placeholder="xyzcompany@gmail.com"
                           class="block w-full px-5 py-3 mt-2 text-gray-700  border border-gray-200 rounded-md bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           required
@@ -231,13 +255,17 @@ export default function Contact() {
                         </label>
                         <textarea
                           name="message"
+                          {...register("message")}
                           class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400  border border-gray-200 rounded-md md:h-48  bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                           placeholder="Message"
                           required
                         ></textarea>
                       </div>
 
-                      <button class="w-full px-6 py-3 mt-6 text-sm ftracking-wide capitalize transform bg-gray-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50  relative inline-flex items-center justify-center p-4 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
+                      <button
+                        type="submit"
+                        className="w-full px-6 py-3 mt-6 text-sm ftracking-wide capitalize transform bg-gray-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-white-400 focus:ring-opacity-50  relative inline-flex items-center justify-center p-4 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
+                      >
                         <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +283,11 @@ export default function Contact() {
                         </span>
                         <span class="relative invisible">Button Text</span>
                       </button>
+                      <div id="result"></div>
                     </form>
+                  </div>
+                  <div className="result h-2 text-red-600 mt-3 w-full">
+                    {result}
                   </div>
                 </Zoom>
               </div>
