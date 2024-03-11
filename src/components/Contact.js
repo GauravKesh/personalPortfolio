@@ -18,7 +18,7 @@ export default function Contact() {
     const formData = new FormData();
     formData.append("access_key", "e9e6bb07-5d1d-4792-9125-f82ecdeaa341");
     formData.append("title", 'New Message from "Personal Portfolio"');
-    formData.append("from_name", `${data.name} Portfolio`);
+    formData.append("from_name", `${data.name} [ " Portfolio "]`);
     formData.append("subject", `${data.name} has sent you a message`);
 
     for (const key in data) {
