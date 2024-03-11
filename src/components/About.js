@@ -43,7 +43,7 @@ export default function About() {
                 <div className="flex justify-center">
                   <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
                     <div className="education-details">
-                      <h1 className="text-3xl text-10xl title-font mb-4 text-blue-700 text-pretty font-bold">
+                      <h1 className="text-3xl text-10xl title-font mb-4 text-blue-300 text-pretty font-bold">
                         Education
                       </h1>
 
