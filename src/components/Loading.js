@@ -4,7 +4,7 @@ import "../style/loading.css"
 export default function Loading() {
 
   return (
-    <div id="load" className="bg-gray-900">
+    <div id="load">
       <div>E</div>
       <div>M</div>
       <div>O</div>
