@@ -51,11 +51,11 @@ export default function Contact() {
   return (
     <>
       <section class="min-h-screen bg-cover ">
-        <div class="flex flex-col min-h-screen bg-black/60">
+        <div class="flex flex-col min-h-screen bg-black/60 md:pl-10">
           <div class="container flex flex-col flex-1 px-6 py-12 mx-auto">
             <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
               <Zoom>
-                <div class="text-white lg:w-1/2 lg:mx-6">
+                <div class="text-white lg:w-1/2 lg:mx-6 md:pl-5 md:pr-0 ">
                   <h1 class="text-2xl font-semibold capitalize lg:text-3xl text-blue-300">
                     Let's Connect
                   </h1>
@@ -210,9 +210,9 @@ export default function Contact() {
                 </div>
               </Zoom>
 
-              <div class="mt-8 lg:w-1/2 lg:mx-6" id="contact-form">
+              <div class="mt-8 lg:w-1/2 lg:mx-6 md:pr-10" id="contact-form">
                 <Zoom delay="1">
-                  <div class="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl dark:bg-black lg:max-w-xl pb-2">
+                  <div class="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl dark:bg-black/60 lg:max-w-xl pb-2">
                     <p class="mt-2 text-gray-400">Send Me your Message</p>
 
                     <form
