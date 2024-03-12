@@ -21,10 +21,10 @@ export default function Projects() {
             <div class="container px-5  mx-auto">
               <div class="flex flex-wrap -m-4 md:flex md:flex-wrap">
                 {/* project 1 */}
-                <div class="p-4 md:w-1/2  hover:animate-pulse">
+                <div class="p-4 md:w-1/3  hover:animate-pulse">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img
-                      class="lg:h-48 md:h-20 w-full scale-100 object-cover object-center my-2 mx-2"
+                      class="lg:h-48 md:h-20 w-full scale-100  object-center  object-fill my-2 mx-2"
                       src={project1}
                       alt="blog"
                     />
@@ -83,10 +83,10 @@ export default function Projects() {
                   </div>
                 </div>
                 {/* project 2 */}
-                <div class="p-4 md:w-1/2  animate-dzoom  ">
+                <div class="p-4 md:w-1/3  animate-dzoom  ">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img
-                      class="lg:h-48 md:h-36 w-full object-cover object-center object-fit my-2 px-2"
+                      class="lg:h-48 md:h-36 w-full object-center  object-fill object-fit my-2 px-2"
                       src={project4}
                       alt="blog"
                     />
@@ -143,10 +143,10 @@ export default function Projects() {
                 </div>
 
                 {/* project 3 */}
-                <div class="p-4 md:w-1/2  animate-dzoom  ">
+                <div class="p-4 md:w-1/3  animate-dzoom  ">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img
-                      class="lg:h-48 md:h-36 w-full object-cover object-center object-fit my-2 px-2"
+                      class="lg:h-48 md:h-36 w-full object-center  object-fill object-fit my-2 px-2"
                       src={project3}
                       alt="blog"
                     />
@@ -205,10 +205,10 @@ export default function Projects() {
                 {/* project 4 */}
 
                 {/* project 5 */}
-                <div class="p-4 md:w-1/2 animate-dzoom   ">
+                <div class="p-4 md:w-1/3 animate-dzoom   ">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img
-                      class="lg:h-48 md:h-36 w-full object-cover object-center my-2 px-2"
+                      class="lg:h-48 md:h-36 w-full object-center  object-fill my-2 px-2"
                       src={project2}
                       alt="blog"
                     />
