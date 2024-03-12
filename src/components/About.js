@@ -7,9 +7,9 @@ export default function About() {
   return (
     <>
       <div className="aboutbody py-10">
-        <section className="text-gray-400 justify-center bg-gray-900 body-font pt-10 pb-10 ">
+        <section className="text-gray-400 justify-center bg-gray-900 body-font pt-10 pb-10 sm:pb-2 ">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-5xl text-10xl  title-font mb-2 text-white text-pretty font-bold">
+            <h1 className="text-3xl   title-font mb-2 text-white text-pretty font-bold">
               Know more About Me
             </h1>
           </div>
@@ -64,8 +64,8 @@ export default function About() {
             </div>
           </Zoom>
 
-          <div className="quote container flex flex-col text-center w-full mb-20 pl-10">
-            <blockquote class="text-xl italic font-semibold text-gray-400 dark:text-white">
+          <div className="quote container flex flex-col justify-center text-center   w-full mb-20 pl-10">
+            <blockquote class="text-xl italic font-semibold text-gray-400 dark:text-white md:pl-20 lg:pl-20">
               <svg
                 class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4"
                 aria-hidden="true"

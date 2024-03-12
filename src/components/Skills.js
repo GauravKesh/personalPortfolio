@@ -20,7 +20,7 @@ export default function Skills() {
   return (
     <>
       <section class="text-gray-400 bg-gray-900 body-font py-5">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto md:pl-10">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-white">
               Skills
@@ -31,9 +31,9 @@ export default function Skills() {
             </p>
           </div>
 
-          <div class="mb-4 border-b border-gray-700 ">
+          <div class="mb-4 border-b border-gray-700 md:flex md:justify-center  flex justify-center">
             <ul
-              class="flex flex-no-wrap -mb-px pb-3  text-sm font-medium text-center md:flex  md:justify-center overflow-x-scroll sm:overflow-hidden md:overflow-hidden  "
+              class="flex flex-no-wrap -mb-px pb-3  text-sm font-medium text-center  md:flex md:align-middle overflow-x-scroll sm:overflow-hidden md:overflow-hidden   "
               id="default-tab"
               data-tabs-toggle="#default-tab-content"
               role="tablist"

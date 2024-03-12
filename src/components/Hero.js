@@ -39,7 +39,7 @@ export default function Hero() {
       >
         <div class="container mx-auto  flex  py-24 md:flex-row flex-col items-center space-x-10 ">
           <div class="lg:flex-grow md:w-1/2 pt-0  lg:pr-0 lg:pl-20 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center md:pl-20   ">
-            <h1 class="title-font  sm:text-4xl text-3xl mb-4 font-medium text-indigo-400 ">
+            <h1 class="title-font  sm:text-4xl text-3xl mb-4 font-medium text-blue-300  ">
               <Zoom damping={0.1}>
                 <p>Welcome! I'm Gaurav,</p>
               </Zoom>
