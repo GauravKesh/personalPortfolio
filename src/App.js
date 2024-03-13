@@ -40,16 +40,16 @@ function App() {
 
   return (
     <>
-      <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0 p-0 ">
+      <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0  ">
         <div className="navbb w-full">
-          <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50  flex lg:pl-20  lg:pr-20 lg:mr-10 lg:flex lg:justify-between  xl:pl-20 xl:pr-20 xl:mr-5 xl:flex xl:justify-between ">
+          <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50  flex lg:pl-20  lg:pr-20 lg:mr-10 lg:flex lg:justify-between  xl:pl-20 xl:pr-20 xl:mr-5 xl:flex xl:justify-between md:justify-between ">
             <div className=" ">
-              <div className=" dropdown bg-gray-900">
+              <div className=" dropdown bg-gray-900 ">
                 {/* open icon */}
                 <div
                   tabIndex={0}
                   role="button"
-                  className="btn btn-ghost lg:hidden bg-gray-900 "
+                  className="btn btn-ghost md:hidden  lg:hidden bg-gray-900 "
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
@@ -105,16 +105,17 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div className="plogo  ">
-                <a
-                  className="btn btn-ghost bg-grey-900 w-30 justify-start  px-1"
-                  onClick={() => scrollToTargetClick("hero")}
-                >
-                  <img className="w-30 rounded h-11" src={glogo} alt="logo" />
-                </a>
+
+              <div
+                className="avatar md:pl-10 "
+                onClick={() => scrollToTargetClick("hero")}
+              >
+                <div className="w-12 rounded-full">
+                  <img src={glogo} />
+                </div>
               </div>
             </div>
-            <div className="   container-md navbar-center   flex-row-reverse justify-center    bg-gray-900    hidden lg:flex   ">
+            <div className="   container-md navbar-center   flex-row-reverse justify-center    bg-gray-900  hidden md:block lg:visible  lg:flex   ">
               <ul className="menu bg-gray-900 menu-horizontal ">
                 <li>
                   <a onClick={() => scrollToTargetClick("about")}>About</a>
