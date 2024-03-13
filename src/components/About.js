@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <div className="aboutbody py-10">
-        <section className="text-gray-400 justify-center bg-gray-900 body-font pt-10 pb-10 sm:pb-2 ">
+        <section className="text-gray-400 justify-center bg-gray-900 body-font pt-10 pb-10 sm:pb-2 px-10">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-3xl   title-font mb-2 text-white text-pretty font-bold">
               Know more About Me
@@ -31,7 +31,7 @@ export default function About() {
                 <h2 className="text-2xl font-bold mb-4 text-white-300">
                   I'm Gaurav Kesh Roushan
                 </h2>
-                <p className="about mb-4 leading-relaxed mx-2 md:mx-0">
+                <p className="about mb-4 leading-relaxed mx-2 md:mx-0 text-wrap w-3/4" >
                   A <strong>web developer</strong> with a passion for bringing
                   digital visions to life. Originally from mention your place of
                   origin, my journey into the world of web development began

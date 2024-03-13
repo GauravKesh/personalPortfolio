@@ -14,7 +14,6 @@ import glogo from "./assets/logo/myLogo.png";
 function App() {
   /* Hamburger Function */
   const [isOpen, setIsOpen] = useState(false);
-
   const [isLoading, setIsLoading] = useState(true);
 
   /* scrolling target */
@@ -23,13 +22,11 @@ function App() {
       behavior: "smooth",
     });
   };
- 
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
-   
   }, []);
   // scroll-to-id
   const scrollToTarget = (targetId) => {
@@ -44,8 +41,8 @@ function App() {
   return (
     <>
       <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0 ">
-        <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50 w-full px-5 py-2 flex  ">
-          <div className="navbar-start ">
+        <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50  flex lg:pl-20 lg:ml-10 lg:pr-20 lg:mr-10 lg:flex lg:justify-between  xl:pl-20 xl:pr-20 xl:mr-5 xl:flex xl:justify-between ">
+          <div className=" ">
             <div className=" dropdown bg-gray-900">
               {/* open icon */}
               <div
@@ -105,17 +102,17 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="plogo w-30 lg:pl-30 md:pr-0  ">
+            <div className="plogo  ">
               <a
-                className="btn btn-ghost bg-grey-900 hover:bg-grey-900 text-5xl px-1"
+                className="btn btn-ghost bg-grey-900 w-30 justify-start  px-1"
                 onClick={() => scrollToTargetClick("hero")}
               >
-                <img className="w-15 rounded h-11" src={glogo} alt="logo" />
+                <img className="w-30 rounded h-11" src={glogo} alt="logo" />
               </a>
             </div>
           </div>
-          <div className="  container navbar-center flex-row-reverse bg-gray-900   hidden lg:flex lg:pr-16 lg:pl-20">
-            <ul className="menu bg-gray-900 menu-horizontal px-10 ">
+          <div className="   container-md navbar-center   flex-row-reverse justify-center    bg-gray-900    hidden lg:flex   ">
+            <ul className="menu bg-gray-900 menu-horizontal ">
               <li>
                 <a onClick={() => scrollToTargetClick("about")}>About</a>
               </li>
