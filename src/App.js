@@ -40,49 +40,82 @@ function App() {
 
   return (
     <>
-      <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0 ">
-        <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50  flex lg:pl-20 lg:ml-10 lg:pr-20 lg:mr-10 lg:flex lg:justify-between  xl:pl-20 xl:pr-20 xl:mr-5 xl:flex xl:justify-between ">
-          <div className=" ">
-            <div className=" dropdown bg-gray-900">
-              {/* open icon */}
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost lg:hidden bg-gray-900 "
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
-                {isOpen === false ? (
-                  // close icon
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-                  </svg>
-                ) : (
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 512 512"
-                  >
-                    <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-                  </svg>
-                )}
-              </div>
+      <nav className="fixed w-full z-30 transition-transform duration-300 transform translate-y-0 p-0 ">
+        <div className="navbb w-full">
+          <div className="  bg-gray-900  navbar sticky-top   bg-grey-900 text-white text-pretty  z-50  flex lg:pl-20  lg:pr-20 lg:mr-10 lg:flex lg:justify-between  xl:pl-20 xl:pr-20 xl:mr-5 xl:flex xl:justify-between ">
+            <div className=" ">
+              <div className=" dropdown bg-gray-900">
+                {/* open icon */}
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost lg:hidden bg-gray-900 "
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                >
+                  {isOpen === false ? (
+                    // close icon
+                    <svg
+                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512"
+                    >
+                      <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                    </svg>
+                  ) : (
+                    <svg
+                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512"
+                    >
+                      <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                    </svg>
+                  )}
+                </div>
 
-              <ul
-                tabIndex={0}
-                className={`container-lg  menu menu-lg dropdown-content pr-6 mt-3 z-[1] bg-gray-900  rounded-box w-90 h-100 ${
-                  isOpen ? "visible" : "hidden"
-                }`}
-              >
+                <ul
+                  tabIndex={0}
+                  className={`container-lg  menu menu-lg dropdown-content pr-6 mt-3 z-[1] bg-gray-900  rounded-box w-90 h-100 ${
+                    isOpen ? "visible" : "hidden"
+                  }`}
+                >
+                  <li>
+                    <a onClick={() => scrollToTargetClick("about")}>About</a>
+                  </li>
+                  <li>
+                    <a onClick={() => scrollToTargetClick("skills")}>Skills</a>
+                  </li>
+                  <li>
+                    <a onClick={() => scrollToTargetClick("project")}>
+                      Projects
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-nowrap"
+                      onClick={() => scrollToTargetClick("contact")}
+                    >
+                      Contact Me
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="plogo  ">
+                <a
+                  className="btn btn-ghost bg-grey-900 w-30 justify-start  px-1"
+                  onClick={() => scrollToTargetClick("hero")}
+                >
+                  <img className="w-30 rounded h-11" src={glogo} alt="logo" />
+                </a>
+              </div>
+            </div>
+            <div className="   container-md navbar-center   flex-row-reverse justify-center    bg-gray-900    hidden lg:flex   ">
+              <ul className="menu bg-gray-900 menu-horizontal ">
                 <li>
                   <a onClick={() => scrollToTargetClick("about")}>About</a>
                 </li>
@@ -92,41 +125,14 @@ function App() {
                 <li>
                   <a onClick={() => scrollToTargetClick("project")}>Projects</a>
                 </li>
+
                 <li>
-                  <a
-                    className="text-nowrap"
-                    onClick={() => scrollToTargetClick("contact")}
-                  >
+                  <a onClick={() => scrollToTargetClick("contact")}>
                     Contact Me
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="plogo  ">
-              <a
-                className="btn btn-ghost bg-grey-900 w-30 justify-start  px-1"
-                onClick={() => scrollToTargetClick("hero")}
-              >
-                <img className="w-30 rounded h-11" src={glogo} alt="logo" />
-              </a>
-            </div>
-          </div>
-          <div className="   container-md navbar-center   flex-row-reverse justify-center    bg-gray-900    hidden lg:flex   ">
-            <ul className="menu bg-gray-900 menu-horizontal ">
-              <li>
-                <a onClick={() => scrollToTargetClick("about")}>About</a>
-              </li>
-              <li>
-                <a onClick={() => scrollToTargetClick("skills")}>Skills</a>
-              </li>
-              <li>
-                <a onClick={() => scrollToTargetClick("project")}>Projects</a>
-              </li>
-
-              <li>
-                <a onClick={() => scrollToTargetClick("contact")}>Contact Me</a>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
