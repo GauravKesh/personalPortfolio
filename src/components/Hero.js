@@ -119,7 +119,10 @@ export default function Hero() {
                   </svg>
                 </span>
                 <span class="relative group-hover:text-white group-hover:opacity-90 translate-x-1">
-                  Resume
+                  <a href="https://drive.google.com/file/d/1xKHNmVDA6fQ7kEDkfxEOZq68PRimkMW8/view" target="_blank">
+                    {" "}
+                    Resume
+                  </a>
                 </span>
               </button>
             </div>
