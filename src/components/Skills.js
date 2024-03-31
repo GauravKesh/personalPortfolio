@@ -273,7 +273,7 @@ export default function Skills() {
                     </div>
                     <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                       <h2 class="text-white text-lg title-font font-medium mb-2">
-                        Talwind CSS
+                        Tailwind CSS
                       </h2>
                       <p class="leading-relaxed text-base">
                         {/*  <strong>Experience :- </strong>6 months
