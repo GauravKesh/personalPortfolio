@@ -33,8 +33,7 @@ export default function About() {
                 </h2>
                 <p className="about mb-4 leading-relaxed mx-2 md:mx-0 text-wrap w-3/4" >
                   A <strong>web developer</strong> with a passion for bringing
-                  digital visions to life. Originally from mention your place of
-                  origin, my journey into the world of web development began
+                  digital visions to life.My journey into the world of web development began
                   with a spark of curiosity and a thirst for creativity.
                 </p>
                 {/* Education */}
