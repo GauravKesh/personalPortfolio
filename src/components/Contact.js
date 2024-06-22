@@ -3,8 +3,11 @@
 import React, { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 import { useForm } from "react-hook-form";
+import ReactGA from "react-ga";
 // import "dotenv/config";
 export default function Contact() {
+  const TRACKING_ID = "G-J43TE65YWB";
+  ReactGA.initialize(TRACKING_ID);
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
 
@@ -12,9 +15,9 @@ export default function Contact() {
     setResult("");
   }, 5000);
 
-  const onSubmit = async (data,e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault(); // Prevent default form submission behavior
-      e.target.reset();
+    e.target.reset();
     console.log(data);
     setResult("Sending....");
     const formData = new FormData();
@@ -41,7 +44,6 @@ export default function Contact() {
       setResult(
         "I received your Message! I will get back to you soon. Thank you!"
       );
-    
     } else {
       console.log("Error", res);
       setResult(res.message);

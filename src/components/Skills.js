@@ -3,7 +3,11 @@
 import React, { useState } from "react";
 // import { Zoom } from "react-awesome-reveal";
 
+import ReactGA from "react-ga";
+
 export default function Skills() {
+    const TRACKING_ID = "G-J43TE65YWB";
+    ReactGA.initialize(TRACKING_ID);
   /* scrolling target */
   const scrollToTargetClick = (targetId) => {
     document.getElementById(targetId).scrollIntoView({

@@ -4,8 +4,11 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import glogo from "../assets/logo/myLogo.png";
+import ReactGA from "react-ga";
 
 export default function footer() {
+    const TRACKING_ID = "G-J43TE65YWB";
+    ReactGA.initialize(TRACKING_ID);
   const d = new Date();
   let year = d.getFullYear();
   const scrollToTargetClick = (targetId) => {

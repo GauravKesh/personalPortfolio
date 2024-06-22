@@ -2,8 +2,10 @@ import { Zoom } from "react-awesome-reveal";
 
 // import profileimage from "../assets/bg-image/bgp6.png";
 import profileimg from "../assets/logo/smbgp1.png";
-
+import ReactGA from "react-ga";
 export default function About() {
+  const TRACKING_ID = "G-J43TE65YWB";
+  ReactGA.initialize(TRACKING_ID);
   return (
     <>
       <div className="aboutbody py-10">
@@ -31,10 +33,11 @@ export default function About() {
                 <h2 className="text-2xl font-bold mb-4 text-white-300">
                   I'm Gaurav Kesh Roushan
                 </h2>
-                <p className="about mb-4 leading-relaxed mx-2 md:mx-0 text-wrap w-3/4" >
+                <p className="about mb-4 leading-relaxed mx-2 md:mx-0 text-wrap w-3/4">
                   A <strong>web developer</strong> with a passion for bringing
-                  digital visions to life.My journey into the world of web development began
-                  with a spark of curiosity and a thirst for creativity.
+                  digital visions to life.My journey into the world of web
+                  development began with a spark of curiosity and a thirst for
+                  creativity.
                 </p>
                 {/* Education */}
 

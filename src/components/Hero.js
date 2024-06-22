@@ -1,9 +1,11 @@
 import { React, useEffect, useState } from "react";
+
 import bgImage from "../assets/bg-image/bgp2.png";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { getDownloadURL } from "firebase/storage";
 import { storage } from "../config/Firebase";
 import { ref } from "react";
+import ReactGA from "react-ga"
 // // for viewing the pdf
 // import { Worker } from "@react-pdf-viewer/core";
 // import { Viewer } from "@react-pdf-viewer/core";
@@ -11,6 +13,8 @@ import { ref } from "react";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 
 export default function Hero() {
+    const TRACKING_ID = "G-J43TE65YWB";
+    ReactGA.initialize(TRACKING_ID);
   const [resume, setResume] = useState(null); // setting state to show resume
 
   const scrollToTarget = (targetId) => {

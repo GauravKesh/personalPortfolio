@@ -10,7 +10,7 @@ import Projects from "./components/Projects.js";
 import Loading from "./components/Loading.js";
 import Skills from "./components/Skills.js";
 import glogo from "./assets/logo/myLogo.png";
-
+import ReactGA from "react-ga";
 function App() {
   /* Hamburger Function */
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +22,8 @@ function App() {
       behavior: "smooth",
     });
   };
+    const TRACKING_ID = "G-J43TE65YWB";
+    ReactGA.initialize(TRACKING_ID);
 
   useEffect(() => {
     setTimeout(() => {
