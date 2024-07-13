@@ -71,7 +71,7 @@ export default function Contact() {
                     ideas into reality!
                   </p>
                   <br />
-                  <div class="flex mt-4 -mx-1.5 ">
+                      {/* <div class="flex mt-4 -mx-1.5 ">
                     <a
                       class="mx-1.5 text-white transition-colors duration-300 transform "
                       href="tel:+917892917825"
@@ -91,7 +91,7 @@ export default function Contact() {
                     <div className="contact-number text-white pl-2">
                       +91 7892917825
                     </div>
-                  </div>
+                  </div>/*}
 
                   {/* email */}
                   <div class="flex mt-4 -mx-1.5 ">
