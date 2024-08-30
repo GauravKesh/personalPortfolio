@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { React, useEffect, useState } from "react";
 
 import bgImage from "../assets/bg-image/bgp2.png";
@@ -123,7 +124,10 @@ export default function Hero() {
                   </svg>
                 </span>
                 <span class="relative group-hover:text-white group-hover:opacity-90 translate-x-1">
-                  <a href="https://drive.google.com/file/d/1bw3lefLp1b50l3KP7tPwniFgUxJHw5M8/view" target="_blank">
+                  <a
+                    href="https://drive.google.com/file/d/1LXG-A3A5OnMOCS1NS2fP5Ain2FKzwQmv/view"
+                    target="_blank"
+                  >
                     {" "}
                     Resume
                   </a>
