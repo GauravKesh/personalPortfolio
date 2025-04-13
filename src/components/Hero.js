@@ -125,7 +125,7 @@ export default function Hero() {
                 </span>
                 <span class="relative group-hover:text-white group-hover:opacity-90 translate-x-1">
                   <a
-                    href="https://drive.google.com/file/d/1cQVnAPlYLMEHOe66UkMqRRvhEm8dQTjA/view"
+                    href="https://drive.google.com/file/d/1RtB8OW-iL0vLs0Q2U9O57_sJ4eOINhv_/view?usp=sharing"
                     target="_blank"
                   >
                     {" "}
